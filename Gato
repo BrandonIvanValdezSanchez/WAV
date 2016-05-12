@@ -1,0 +1,20 @@
+#Autor Brandon Iván Valdez Sánchez
+class Gato
+    def initialize(nombre)
+       @GNombre = nombre
+    end
+  def setNombre (nombre)
+         @GNombre = nombre
+  end
+  def getNombre
+        return @GNombre
+
+   end
+    def maullar
+        puts "miau miau"
+   end
+end
+miGato = Gato.new("garfield")
+miGato.maullar
+puts "El nombre de el gato es: #{miGato.getNombre}"
+miGato.setNombre(gets.chomp)
