@@ -1,0 +1,45 @@
+#Autor Brandon Iván Valdez Sánchez
+class Tesoro
+ 
+
+ def initialize(nombre = nil, descripcion = nil)
+     @nombre = nombre
+     @descripcion = descripcion
+end
+
+ def get_nombre
+      return @nombre
+ end
+  def set_nombre(nombre)
+         @nombre = nombre 
+ end
+
+
+ def get_descripcion
+      return @ndescripcion
+ end
+  def set_descripcion(descripcion)
+         @descripcion = descripcion
+ end
+  
+  def to_s #sobrescribimos el metodo por defecto to_s
+        "El tesoro #{@nombre} es #{@descripcion}\n"
+ end
+end
+
+mi_Tesoro = Tesoro.new
+mi_Tesoro.set_nombre("Kiko")
+print "Mi tesoro se llama #{mi_Tesoro.get_nombre} y es #
+{mi_Tesoro.get_descripicon}\n"
+
+tu_tesoro = Tesoro.new("Esperanza Gomez", 
+"Es la mejor de las mejores")
+puts tu_tesoro.to_s
+
+#Metodo inspect muestra lo que hay en el objetivo
+
+puts "Inspeccionando el tesoro #{mi_Tesoro.inspect}"
+
+#Metodo abreviado del inspect con impresion incluida
+
+p(tu_tesoro)
