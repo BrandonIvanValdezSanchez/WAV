@@ -1,0 +1,20 @@
+#Autor Brandon Iván Valdez Sánchez
+class Perro
+    def initialize(nombre)
+       @PNombre = nombre
+    end
+  def setNombre (nombre)
+         @PNombre = nombre
+  end
+  def getNombre
+        return @PNombre
+
+   end
+    def ladrar
+        puts "Wuao wuao"
+   end
+end
+miPerro = Perro.new("Scrapy")
+miPerro.ladrar
+puts "El nombre de el perro es: #{miPerro.getNombre}"
+miPerro.setNombre(gets.chomp)
